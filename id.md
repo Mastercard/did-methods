@@ -1,6 +1,6 @@
 # Introduction
 
-The Mastercard ID Service (MIDS) platform aims to provide online identity verification and a reusable digital identity for consumers.  As part of this program, Mastercard aims to establish `id` method for representing a user.  This specification details how DIDs under this method will be managed by Mastercard.
+The Mastercard ID Service (MIDS) platform is a digital identity service provided by [Mastercard International Inc.](https://www.mastercard.com) and its affiliates (Mastercard).  The service provides online identity verification and a reusable digital identity for consumers.  As part of this program, Mastercard aims to establish `id` method for representing a user.  This specification details how DIDs under this method will be managed by Mastercard.  For more information, please see https://idservice.com
 
 # Status of This Document
 
@@ -44,15 +44,15 @@ Any corresponding DID documents that are generated as a result of this enrollmen
 
 ## Retrieve
 
-DIDs may be retrieved by querying the ledger directly, or by issuing an HTTP GET request against `https://idservice.com/did/{did}`.  This URL may change in future versions of this document as the service is better defined.  The result of the query against either the ledger or the HTTP GET request is a DID document that matches the queried DID, if it exists.
+DIDs may be retrieved by querying the ledger directly, or by issuing an HTTP GET request against `https://idservice.com/did/{did}`.  This URL may change in future versions of this document as the service evolves.  The result of the query against either the ledger or the HTTP GET request is a DID document that matches the queried DID, if it exists.
 
 ## Update
 
-As part of routine key rotation, it's possible that a DID may be updated to reflect new signing keys.  Key rotation can happen in response to a user request, or key expiration.  These updates will be made periodically as necessary to operate the platform and maintain compliance with Mastercard key rotation policies.  Updates will be initiated from the Mastercard ID mobile application.
+As part of routine key rotation, it's possible that a DID may be updated to reflect new signing keys.  Key rotation can happen in response to events such as a user request, or key expiration.  These updates will be made periodically as necessary to operate the platform and maintain compliance with Mastercard key rotation policies.  Updates will be initiated from the Mastercard ID mobile application.
 
-## Delete
+## Deactivate (Delete)
 
-At a user's request, a DID document can be completely deleted.  This request would be initiated from the Mastercard ID mobile app.  Once the request has been processed, Mastercard will delete the DID and any associated DID documents.
+At a user's request, a DID document can be deactivated.  This request would be initiated from the Mastercard ID mobile app.  Once the request has been processed, Mastercard will deactivate the DID.
 
 # Security Considerations
 
