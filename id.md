@@ -78,7 +78,7 @@ This section provides the security consideration for the DID method implementati
 
 This section provides the privacy consideration for the DID method implementation.
 
- - No user personal data are stored in a DID document.
+ - No identity information is stored in a DID document.
  - The DID controller MUST ensure to protect integrity and confidentiality of user personal data. The DID controller MUST comply with all applicable privacy and data protection laws, regulations and principles.
  - If required, DID controller MUST ensure that necessary security controls are in place to protect user personal data.
  - The DID controller MUST ensure that no personal data is written on any system or application log.
