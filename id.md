@@ -44,7 +44,7 @@ Any corresponding DID documents that are generated as a result of this registrat
 
 ## Retrieve
 
-A registered DID may be retrieved by an HTTP GET request against `https://idservice.com/did/{did}`.  This URL may change in future versions of this document as the service evolves.  The result of the query against either the ledger or the HTTP GET request is a DID document that matches the queried DID, if it exists.
+A registered DID may be retrieved by an HTTP GET request against `https://idservice.com/did/{did}`.  This URL may change in future versions of this document as the service evolves.  The result of the query is a DID document that matches the queried DID, if it exists.
 
 ## Update
 
