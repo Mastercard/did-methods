@@ -83,3 +83,6 @@ This section provides the privacy consideration for the DID method implementatio
  - If required, DID controller MUST ensure that necessary security controls are in place to protect user personal data.
  - The DID controller MUST ensure that no personal data is written on any system or application log.
  - The DID controller MUST ensure that application does not store any personal data in temporary memory.
+ - The DID controller MUST have confidentiality protections to prevent surveillance of the content of communications.
+ - The DID controller MUST comply with the ID Global Privacy Policy (https://idservice.com/en/id-privacy-notice.html)
+ - The Mastercard ID Service platform protects against denial-of-service attacks and other such intrusion threats.
